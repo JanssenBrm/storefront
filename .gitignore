@@ -1,0 +1,17 @@
+node_modules
+dist
+
+.env
+cypress.env.json
+sandbox.config.json
+*.env
+extensions.*.json
+
+**/cypress/screenshots/
+**/cypress/video/
+.nyc_output
+
+.DS_Store
+.idea
+.vscode
+jsconfig.json
