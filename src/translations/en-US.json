@@ -1,0 +1,98 @@
+{
+  "extensions": {
+    "marketplace": {
+      "appListing": {
+        "browseMarketplaceApps": "Browse the app marketplace",
+        "marketplaceAppsSectionTitle": "Marketplace applications",
+        "noAppSummaryProvided": "No summary provided.",
+        "noMarketplaceAppSubscriptions": "You have not subscribed to any marketplace apps yet.",
+        "retrievingMarketplaceAppSubscriptions": "Retrieving all subscribed Marketplace apps..."
+      },
+      "appSettings": {
+        "marketplaceSettingsSubSectionTitle": "Marketplace settings",
+        "appLabelsSubSectionDescription": "Set your app's visibility, and add labels to it.",
+        "privateMarketplaceAppTitle": "Private",
+        "privateMarketplaceAppSubtitle": "This application is intended only for testing or private use, and will not be displayed on the Marketplace.",
+        "publicMarketplaceAppTitle": "Public",
+        "publicMarketplaceAppSubtitle": "This application is eligible for display on the Marketplace.",
+        "labelsFieldLabel": "Labels",
+        "labelsFieldHelperText": "Each provided label should be separated by a comma.",
+        "appDirectURLFieldLabel": "Application URL",
+        "invalidURL": "The provided URL is not valid."
+      },
+      "appMarketplace": {
+        "headerTitle": "Explore the {{portalName}} Marketplace",
+        "searchForAppsTextField": "Search for apps",
+        "noAppsTitle": "There are no applications in our Marketplace!",
+        "noAppsSubtitlePartOne": "We don't have any applications available... yet!",
+        "noAppsSubtitlePartTwo": "Be the first to create one!",
+        "createAppButtonLabel": "Create application",
+        "sortByTitle": "Sort by:",
+        "sortModes": {
+          "appName": "Application name",
+          "publisherName": "Publisher name",
+          "lastUpdated": "Last updated"
+        },
+        "filterByTitle": "Filter by:",
+        "filterByModes": {
+          "labels": "Labels",
+          "noLabels": "No labels to filter with",
+          "publishers": "Publishers",
+          "noPublishers": "No publishers to filter with"
+        },
+        "amountOfAppsTextPartOne": "apps",
+        "amountOfAppsTextPartTwo": "available",
+        "noAppsToDisplayText": "No apps to display!",
+        "retrievingAppsToDisplayText": "Retrieving all apps, please hold...",
+        "noSummaryAvailableText": "No summary provided.",
+        "noLabelsProvidedText": "No labels provided",
+        "featuredAppsTitle": "Featured apps",
+        "featuredAppsSubtitle": "Ready to try? Subscribe to one of your featured apps to get started!",
+        "ctaCard": {
+          "buttonLabel": "Go to portal",
+          "title": "Are you a Developer?",
+          "text": "Publish and market your own applications on {{portalOwner}}'s Marketplace through our developer portal!"
+        },
+        "appDetails": {
+          "loadingAppDetails": "Loading the selected app's details...",
+          "appSubscribeButton": "Subscribe app",
+          "signInToSubscribe": "Sign in to Subscribe",
+          "appAlreadySubscribedButton": "Subscribed to app",
+          "accessAppButtonLabel": "Access app",
+          "subSectionTitleOne": "Application links:",
+          "subSectionTitleTwo": "Published by:",
+          "subSectionTitleThree": "Publisher links:",
+          "appLinks": {
+            "websiteURL": "Website URL",
+            "tosURL": "Terms of Service",
+            "privacyPolicyURL": "Privacy Policy URL",
+            "youTubeURL": "YouTube URL",
+            "supportURL": "Support URL",
+            "noAppLinks": "No application links provided"
+          },
+          "publisherLinks": {
+            "tosURL": "Terms of Service",
+            "privacyPolicyURL": "Privacy Policy URL",
+            "supportURL": "Support URL",
+            "noPublisherLinks": "No publisher links provided"
+          },
+          "noSummary": "No summary provided.",
+          "noLabels": "No labels provided",
+          "partOfAppOverviewTitle": "Overview",
+          "noAppOverview": "No application overview provided",
+          "moreByPublisherTitle": "More by {{publisher}}",
+          "viewMoreButtonLabel": "View more"
+        }
+      },
+      "publisherDetails": {
+        "appsByPublisherTitle": "Applications by {{publisher}}",
+        "privacyUrl": "Privacy policy",
+        "supportUrl": "Support",
+        "tosUrl": "Terms & Conditions",
+        "websiteUrl": "Publisher website",
+        "youtubeUrl": "Publisher YouTube",
+        "errorMessage": "We couldn't find the publisher you're trying to access. Please, select another one from the available publishers."
+      }
+    }
+  }
+}

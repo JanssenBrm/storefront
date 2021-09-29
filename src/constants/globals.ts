@@ -1,0 +1,2 @@
+export const MARKETPLACE_APPS_PER_PAGE = 9
+export const PUBLISHER_APPS_PER_PAGE = 12

@@ -1,0 +1,27 @@
+{
+  "extensions": {
+    "Marketplace": {
+      "admin": {
+        "title": "Área de administração",
+        "tabGeneral": {
+          "tabTitle": "Definições gerais",
+          "portalTitle": "Título do portal",
+          "ownerName": "Nome do proprietário"
+        },
+        "tabGateway": {
+          "tabTitle": "Set up da gateway",
+          "url": "URL da gateway",
+          "apiKey": "API Key da gateway",
+          "submitCoreSubscriptions": "Submeter as subscrições do core"
+        },
+        "tabSocial": {
+          "tabTitle": "Contas de redes sociais",
+          "addTitle": "Adicionar conta...",
+          "types": {
+            "other": "Outro"
+          }
+        }
+      }
+    }
+  }
+}
