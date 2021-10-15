@@ -1,5 +1,5 @@
 node_modules
-dist
+built
 
 .env
 cypress.env.json

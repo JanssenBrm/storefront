@@ -1,3 +1,3 @@
 export type MarkdownDisplayerProps = {
-  content: string
-}
+  content: string;
+};

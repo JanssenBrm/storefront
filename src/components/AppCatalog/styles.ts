@@ -1,46 +1,46 @@
-import { makeStyles } from '@apisuite/fe-base'
+import { makeStyles } from "@apisuite/fe-base";
 
 export default makeStyles((theme) => ({
   appCatalogEntryAvatar: {
     background: theme.palette.gradient.light,
-    height: '40px',
+    height: "40px",
     marginRight: theme.spacing(1.5),
-    textTransform: 'uppercase',
-    width: '40px',
+    textTransform: "uppercase",
+    width: "40px",
   },
 
   appCatalogEntryBottomDetails: {
-    display: 'block',
-    width: '100%',
+    display: "block",
+    width: "100%",
   },
 
   appCatalogEntrySummary: {
     color: theme.palette.text.secondary,
-    display: '-webkit-box',
-    height: '35px',
-    lineHeight: '18px',
+    display: "-webkit-box",
+    height: "35px",
+    lineHeight: "18px",
     marginBottom: theme.spacing(2),
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    '-webkit-box-orient': 'vertical',
-    '-webkit-line-clamp': 2,
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    "-webkit-box-orient": "vertical",
+    "-webkit-line-clamp": 2,
   },
 
   appCatalogEntryImage: {
-    borderRadius: '50%',
-    height: '40px',
+    borderRadius: "50%",
+    height: "40px",
     marginRight: theme.spacing(1.5),
-    width: '40px',
+    width: "40px",
   },
 
   appCatalogEntryLabel: {
-    backgroundColor: theme.palette.grey['100'],
+    backgroundColor: theme.palette.grey["100"],
     borderRadius: theme.shape.borderRadius,
     color: theme.palette.text.primary,
-    height: '27.5px',
+    height: "27.5px",
     marginRight: theme.spacing(1),
     padding: theme.spacing(0, 1),
-    width: 'fit-content',
+    width: "fit-content",
   },
 
   appCatalogEntryLabels: {
@@ -49,44 +49,44 @@ export default makeStyles((theme) => ({
   },
 
   appCatalogEntryLabelsContainer: {
-    display: 'flex',
-    height: '40px',
-    overflowX: 'auto',
-    whiteSpace: 'nowrap',
+    display: "flex",
+    height: "40px",
+    overflowX: "auto",
+    whiteSpace: "nowrap",
   },
 
   appCatalogEntryLink: {
-    textDecoration: 'none',
+    textDecoration: "none",
   },
 
   appCatalogEntryName: {
     color: theme.palette.text.primary,
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
   },
 
   appCatalogEntryNameAndOwnerContainer: {
-    display: 'block',
-    width: '110px',
+    display: "block",
+    width: "110px",
   },
 
   appCatalogEntryOwner: {
     color: theme.palette.text.primary,
-    overflow: 'hidden',
-    textOverflow: 'ellipsis',
-    whiteSpace: 'nowrap',
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
   },
 
   appCatalogEntryText: {
     padding: theme.spacing(2, 1.5, 2, 0),
-    width: '130px',
+    width: "130px",
   },
 
   appCatalogEntryTopDetails: {
-    display: 'flex',
+    display: "flex",
     marginBottom: theme.spacing(2),
-    width: '100%',
+    width: "100%",
   },
 
   appCatalogEntryVersion: {
@@ -98,4 +98,4 @@ export default makeStyles((theme) => ({
   appCatalogEntryVersionAndAccess: {
     color: theme.palette.text.hint,
   },
-}))
+}));

@@ -1,0 +1,32 @@
+// // Main styles
+
+// Set the global 'box-sizing' state to 'border-box', and set the font's size for unit measurement purposes.
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-width: 1024px;
+  width: 100%;
+}
+
+* {
+  &,
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}

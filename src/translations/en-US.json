@@ -56,7 +56,7 @@
         "appDetails": {
           "loadingAppDetails": "Loading the selected app's details...",
           "appSubscribeButton": "Subscribe app",
-          "signInToSubscribe": "Sign in to Subscribe",
+          "signInToSubscribe": "Subscribe to application",
           "appAlreadySubscribedButton": "Subscribed to app",
           "accessAppButtonLabel": "Access app",
           "subSectionTitleOne": "Application links:",
@@ -92,6 +92,12 @@
         "websiteUrl": "Publisher website",
         "youtubeUrl": "Publisher YouTube",
         "errorMessage": "We couldn't find the publisher you're trying to access. Please, select another one from the available publishers."
+      },
+      "footer": {
+        "apiProducts": "API Products",
+        "documentation": "Documentation",
+        "marketplace": "MARKETPLACE",
+        "portal": "{{portalName}} Portal"
       }
     }
   }
