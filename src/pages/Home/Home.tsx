@@ -66,7 +66,7 @@ const Home: React.FC = () => {
   const trans = useTranslation();
 
   const t = (string: string, ...args: any) => {
-    return trans.t(`extensions.marketplace.${string}`, ...args);
+    return trans.t(`extensions.storefront.${string}`, ...args);
   };
 
   useEffect(() => {

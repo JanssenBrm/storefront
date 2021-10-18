@@ -1,6 +1,6 @@
 {
   "extensions": {
-    "Marketplace": {
+    "storefront": {
       "admin": {
         "title": "Área de administração",
         "tabGeneral": {

@@ -33,7 +33,7 @@ function checkToken(response: AxiosResponse) {
 
 export { axios };
 
-function checkStatus(response: AxiosResponse) {
+function checkStatus(response: AxiosResponse): any | ErrorReason {
   if (response.status >= 200 && response.status < 400) {
     // check if the response has a token and get it
     const { hasToken, token } = checkToken(response);
@@ -41,13 +41,13 @@ function checkStatus(response: AxiosResponse) {
       return { token };
     }
 
-    return response.data;
+    return response.data as any;
   }
 
-  let errorsMsg = response.data;
+  let errorsMsg = response.data as any;
 
-  if (response.data && response.data.errors) {
-    errorsMsg = response.data.errors.join(" ");
+  if (errorsMsg && errorsMsg.errors) {
+    errorsMsg = errorsMsg.errors.join(" ");
   }
 
   const reason: ErrorReason = {

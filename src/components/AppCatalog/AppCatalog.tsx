@@ -12,7 +12,7 @@ const AppCatalog: React.FC<AppCatalogProps> = ({ appsToDisplay, catalogMode }) =
   const trans = useTranslation();
 
   const t = (string: string) => {
-    return trans.t(`extensions.marketplace.${string}`);
+    return trans.t(`extensions.storefront.${string}`);
   };
 
   const generateAppCatalogEntry = (appDetails: CatalogAppDetails, index: number) => {

@@ -1,6 +1,6 @@
 {
   "extensions": {
-    "marketplace": {
+    "storefront": {
       "appListing": {
         "browseMarketplaceApps": "Browse the app marketplace",
         "marketplaceAppsSectionTitle": "Marketplace applications",

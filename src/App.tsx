@@ -18,10 +18,6 @@ const App: React.FC = () => {
   useEffect(() => {
     if (storefrontConfig && storefrontConfig.theme) {
       appTheme.current = createMuiTheme(merge(defaultTheme, storefrontConfig.theme));
-
-      console.log("defaultTheme ==========> ", defaultTheme);
-      console.log("storefrontConfig.theme ==========> ", storefrontConfig.theme);
-      console.log("appTheme.current ==========> ", appTheme.current);
     }
   }, [storefrontConfig]);
 

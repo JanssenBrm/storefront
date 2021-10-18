@@ -33,7 +33,7 @@ const AppDetails: React.FC = () => {
   const trans = useTranslation();
 
   const t = (s: string, ...args: ({ publisher: string } | undefined)[]) => {
-    return trans.t(`extensions.marketplace.${s}`, ...args);
+    return trans.t(`extensions.storefront.${s}`, ...args);
   };
 
   // Retrieves the app's ID from the browser window's URL

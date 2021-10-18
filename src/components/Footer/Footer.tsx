@@ -59,7 +59,7 @@ const SubSection = ({ subMenu }: { subMenu: string }) => {
   const trans = useTranslation();
 
   const t = (string: string, ...args: ({ portalName: string } | undefined)[]) => {
-    return trans.t(`extensions.marketplace.${string}`, ...args);
+    return trans.t(`extensions.storefront.${string}`, ...args);
   };
 
   const menuSections: MenuSections = {
