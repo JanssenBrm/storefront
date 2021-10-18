@@ -6,7 +6,7 @@ This is APISuite's Storefront repository.
 
 ### Requirements
 
-* Node.js >=v15.14.0
+* Node.js >=v14
 
 ### Install dependencies
 
