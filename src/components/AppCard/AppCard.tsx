@@ -1,18 +1,12 @@
-import React, { useState } from 'react'
-import { Box, Card, CardContent, Icon, useTheme } from '@apisuite/fe-base'
+import React, { useState } from "react";
+import { Box, Card, CardContent, Icon, useTheme } from "@apisuite/fe-base";
 
-import { AppCardProps } from './types'
+import { AppCardProps } from "./types";
 
-const AppCard: React.FC<AppCardProps> = ({
-  cardContent,
-  contentStyle,
-  icon = '',
-  media,
-  onClick,
-}) => {
-  const { palette } = useTheme()
+export const AppCard: React.FC<AppCardProps> = ({ cardContent, contentStyle, icon = "", media, onClick }) => {
+  const { palette } = useTheme();
 
-  const [isOver, setOver] = useState(false)
+  const [isOver, setOver] = useState(false);
 
   return (
     <Card
@@ -25,21 +19,17 @@ const AppCard: React.FC<AppCardProps> = ({
             }
       }
       onMouseLeave={() => {
-        setOver(false)
+        setOver(false);
       }}
       onMouseOver={() => {
-        setOver(true)
+        setOver(true);
       }}
-      style={{ cursor: 'pointer' }}
+      style={{ cursor: "pointer" }}
     >
       {icon && (
         <Box position="relative">
           <Box p={1} position="absolute" right="0">
-            <Icon
-              style={{ color: isOver ? palette.grey['700'] : palette.label }}
-            >
-              {icon}
-            </Icon>
+            <Icon style={{ color: isOver ? palette.grey["700"] : palette.label }}>{icon}</Icon>
           </Box>
         </Box>
       )}
@@ -48,7 +38,5 @@ const AppCard: React.FC<AppCardProps> = ({
 
       <CardContent className={contentStyle}>{cardContent}</CardContent>
     </Card>
-  )
-}
-
-export default AppCard
+  );
+};

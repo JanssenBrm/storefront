@@ -1,8 +1,8 @@
 /** Endpoints constants */
 
-const { hostname } = window.location
+const { hostname } = window.location;
 
-export const IS_CLOUD = hostname.indexOf('.cloud.apisuite.io') >= 0
+export const IS_CLOUD = hostname.indexOf(".cloud.apisuite.io") >= 0;
 
 /**
  * For when running in the cloud environment.
@@ -14,11 +14,11 @@ export const IS_CLOUD = hostname.indexOf('.cloud.apisuite.io') >= 0
  */
 export function getCloudUrlForSubdomainSuffix(subdomainSuffix: string) {
   if (IS_CLOUD) {
-    const apiHostname = hostname.replace('.', `-${subdomainSuffix}.`)
-    return `https://${apiHostname}`
+    const apiHostname = hostname.replace(".", `-${subdomainSuffix}.`);
+    return `https://${apiHostname}`;
   }
 
-  return null
+  return null;
 }
 
 function getApiUrl() {
@@ -30,22 +30,22 @@ function getApiUrl() {
   If we happen to be on a non - CLOUD environment, we use that environment's (e.g., Development,
   Staging, or Production) variable for the core's API. */
   if (IS_CLOUD) {
-    const apiHostname = hostname.replace('.', '-apisuite-api.')
-    return `https://${apiHostname}`
+    const apiHostname = hostname.replace(".", "-apisuite-api.");
+    return `https://${apiHostname}`;
   }
 
-  return process.env.API_URL || ''
+  return process.env.REACT_APP_API_URL || "";
 }
 
 function getMarketplaceApiUrl() {
   if (IS_CLOUD) {
-    const apiHostname = hostname.replace('.', '-marketplace-api.')
-    return `https://${apiHostname}`
+    const apiHostname = hostname.replace(".", "-marketplace-api.");
+    return `https://${apiHostname}`;
   }
 
-  return process.env.MARKETPLACE_API_URL || ''
+  return process.env.REACT_APP_MARKETPLACE_API_URL || "";
 }
 
-export const API_URL = getApiUrl()
-export const MARKETPLACE_API_URL = getMarketplaceApiUrl()
-export const INFORM_URL = process.env.INFORM_URL || ''
+export const API_URL = getApiUrl();
+export const MARKETPLACE_API_URL = getMarketplaceApiUrl();
+export const PORTAL_URL = process.env.REACT_APP_PORTAL_URL || "";

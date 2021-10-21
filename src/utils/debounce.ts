@@ -1,4 +1,4 @@
-const timers: Record<string, ReturnType<typeof setTimeout>> = {}
+const timers: Record<string, ReturnType<typeof setTimeout>> = {};
 
 /**
  * Debouce a function passed as param at the inputed time or 300ms
@@ -10,8 +10,8 @@ const timers: Record<string, ReturnType<typeof setTimeout>> = {}
  * @example debounce("my-component-debounced-callback", () => console.log("hello1"), 1000)
  */
 export const debounce = (key: string, callback: () => void, time = 300) => {
-  clearTimeout(timers[key])
+  clearTimeout(timers[key]);
   timers[key] = setTimeout(() => {
-    callback()
-  }, time)
-}
+    callback();
+  }, time);
+};

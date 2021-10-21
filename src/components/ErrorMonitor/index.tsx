@@ -1,1 +1,1 @@
-export { default } from './ErrorMonitor'
+export { default } from "./ErrorMonitor";
