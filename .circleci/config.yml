@@ -12,9 +12,9 @@ jobs:
       - checkout
       - run: GH_TOKEN=$GH_TOKEN npx semantic-release
       - persist_to_workspace:
-        root: ~/
-        paths:
-          - project
+          root: ~/
+          paths:
+            - project
 
   build:
     docker:
@@ -36,8 +36,7 @@ workflows:
               only:
                 - master
       - build:
-          context:
-            - docker
+          context: docker
           filters:
             branches:
               only:
