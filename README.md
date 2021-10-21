@@ -46,3 +46,5 @@ The Storefront uses the same type of configuration object as the core but it had
   "storefrontLogo": "URL to get the Storefront from",
 }
 ```
+
+These settings can be managed via the core API, with the `/settings/storefronts/{name}` endpoints, where `{name}` matches the `REACT_APP_STOREFRONT_NAME` environment variable.
