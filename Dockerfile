@@ -1,14 +1,11 @@
-FROM node:14.16-alpine AS build
-
-ARG ENV=dev
-ARG SSH_PRIVATE_KEY
+FROM node:14.17-alpine AS build
 
 WORKDIR /build
 COPY . /build
-RUN apk update
-RUN npm install --no-optional
+RUN npm install --no-optional --no-audit
+RUN npm rebuild node-sass
 RUN npm run build
 
-FROM nginx:1.20.0-alpine
+FROM nginx:1.20-alpine
 COPY --from=build /build /usr/share/nginx/storefront
 COPY nginx/public.conf /etc/nginx/conf.d/default.conf

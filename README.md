@@ -1,6 +1,19 @@
 # APISuite Marketplace Storefront
 
+[![circleci](https://circleci.com/gh/APISuite/apisuite-be.svg?style=shield)](https://app.circleci.com/pipelines/github/APISuite/apisuite-be)
+
 This is APISuite's Storefront repository.
+
+## Docker
+
+Docker images are available in our [DockerHub](https://hub.docker.com/r/cloudokihub/apisuite-storefront).
+
+Every new image is tagged with:
+- latest (dev-latest and stg-latest from develop and staging respectively)
+- semantic version from `package.json` (only in production)
+
+Depending on your goals, you could use a fixed version like `1.0.0` or
+`latest` to simply get the most recent version every time you pull the image.
 
 ## Set up
 
@@ -18,7 +31,7 @@ npm i
 
 1. Copy the `.env.sample` file to `.env` and adapt it to your setup
 
-## Run
+### Run
 
 To start a development server that rebuilds the project on every change, run:
 
