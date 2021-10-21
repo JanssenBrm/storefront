@@ -10,6 +10,7 @@ jobs:
     executor: node14-executor
     steps:
       - checkout
+      - run: npm install
       - run: GH_TOKEN=$GH_TOKEN npx semantic-release
       - persist_to_workspace:
           root: ~/
