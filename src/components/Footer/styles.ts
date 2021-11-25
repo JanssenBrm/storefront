@@ -9,9 +9,6 @@ export default makeStyles((theme) => ({
     "& > a": {
       fontSize: "14px",
       fontWeight: 300,
-      "&:link, &:visited, &:hover, &:active": {
-        color: "inherit",
-      },
     },
 
     "& > p": {
@@ -28,10 +25,8 @@ export default makeStyles((theme) => ({
     paddingTop: "40px",
     width: "100%",
 
-    "& > a": {
-      "&:link, &:visited, &:hover, &:active": {
-        color: "inherit",
-      },
+    "a:link,\n a:visited,\n a:hover,\n a:active": {
+      color: "inherit",
     },
   },
 
@@ -135,6 +130,19 @@ export default makeStyles((theme) => ({
     textDecoration: "none",
     "&:link, &:visited, &:hover, &:active": {
       color: "inherit",
+    },
+  },
+
+  copyrightAnchor: {
+    "&:link, &:visited, &:hover, &:active": {
+      color: "inherit",
+    },
+  },
+
+  policy: {
+    marginRight: ".25rem",
+    "&:last-child": {
+      marginRight: 0,
     },
   },
 }));

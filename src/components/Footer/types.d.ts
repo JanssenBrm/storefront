@@ -1,3 +1,5 @@
+export interface FooterProps {}
+
 export type MenuSection = {
   title: string;
   entries: Array<{
