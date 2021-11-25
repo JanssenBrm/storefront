@@ -13,11 +13,10 @@ export const Navigation: React.FC<NavigationProps> = ({ contractible = false, cl
   const { palette, zIndex, spacing } = useTheme();
   const { storefrontConfig } = useStoreon("storefrontConfig");
   const { ownerInfo } = useConfig();
-  let { navigation } = useConfig();
+  const { navigation } = useConfig();
   const { t } = useTranslation();
 
   const role = "anonymous";
-  navigation = { ...navigation, ...configNav };
 
   const [isMaxWidth, setIsMaxWidth] = useState(window.innerWidth <= 1024);
 
