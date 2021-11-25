@@ -19,6 +19,9 @@ const App: React.FC = () => {
     if (storefrontConfig && storefrontConfig.theme) {
       appTheme.current = createMuiTheme(merge(defaultTheme, storefrontConfig.theme));
     }
+    if (storefrontConfig && storefrontConfig.portalName) {
+      document.title = storefrontConfig.portalName;
+    }
   }, [storefrontConfig]);
 
   return (
