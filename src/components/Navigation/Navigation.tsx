@@ -14,7 +14,6 @@ export const Navigation: React.FC<NavigationProps> = ({ contractible = false, cl
   const { palette, zIndex, spacing } = useTheme();
   const { storefrontConfig } = useStoreon("storefrontConfig");
   const { ownerInfo } = useConfig();
-  //let { navigation } = useConfig();
   const { t } = useTranslation();
 
   const navigation = merge(configNav, storefrontConfig.navigation || {});
